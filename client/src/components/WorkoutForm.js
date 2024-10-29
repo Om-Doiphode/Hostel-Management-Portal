@@ -31,7 +31,7 @@ const WorkoutForm = () => {
 
     const details = { Name1, Name2, Name3, RoomNo };
 
-    const response = await fetch("/api/workouts", {
+    const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/workouts", {
       method: "POST",
       body: JSON.stringify(details),
       headers: {
