@@ -8,7 +8,7 @@ const AdminHome = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('/api/admin/ad', {
+      const response = await fetch('https://hostel-management-portal-ecn2.onrender.com/api/admin/ad', {
         //headers: {'Authorization': `Bearer ${user.token}`},
       })
       const json = await response.json()

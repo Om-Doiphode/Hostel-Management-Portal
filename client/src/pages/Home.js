@@ -25,7 +25,7 @@ const Home = () => {
       setLoading(true);
     console.log(roomDetails);
 
-    const response = await fetch("/api/workouts/home", {
+    const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/workouts/home", {
       method: "PUT",
       body: JSON.stringify(roomDetails),
       headers: {
@@ -66,7 +66,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("/api/workouts/home", {
+      const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/workouts/home", {
         headers: { Authorization: `Bearer ${user.token}` },
       });
       const json = await response.json();

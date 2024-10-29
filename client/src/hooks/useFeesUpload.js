@@ -14,7 +14,7 @@ export const useFeesUpload = () => {
   const uploads = async (feesReceipt, prevAllot) => {
     setIsLoading(true);
     setError(null);
-    const response = await fetch("/api/user/feesupload", {
+    const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/user/feesupload", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

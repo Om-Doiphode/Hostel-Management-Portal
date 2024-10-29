@@ -10,7 +10,7 @@ export const useLogin3 = () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await fetch('/api/clerk/clerklogin', {
+    const response = await fetch('https://hostel-management-portal-ecn2.onrender.com/api/clerk/clerklogin', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ email, password })

@@ -10,7 +10,7 @@ export const useSignup2 = () => {
     setIsLoading(true);
     setError(null);
     console.log(email);
-    const response = await fetch("/api/admin/adminsignup", {
+    const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/admin/adminsignup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),

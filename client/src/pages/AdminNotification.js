@@ -18,7 +18,7 @@ const Notification = () => {
   },[])
   const handleClick = async (not) => {
       console.log("Inside handleclick",not)
-    const response = await fetch('/api/admin/delnotification/' + not._id, {
+    const response = await fetch('https://hostel-management-portal-ecn2.onrender.com/api/admin/delnotification/' + not._id, {
       method: 'DELETE'
     })
     const json = await response.json()

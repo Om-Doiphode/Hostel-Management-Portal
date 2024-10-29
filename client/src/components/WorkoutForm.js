@@ -1,10 +1,12 @@
 import { useState, history } from "react";
+import {useNavigate} from 'react-router-dom';
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import { useAuthContext } from "../hooks/useAuthContext";
 
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext();
   const { user } = useAuthContext();
+  const navigate = useNavigate();
 
   const [Name1, setName1] = useState("");
   const [Name2, setName2] = useState("");
@@ -29,7 +31,7 @@ const WorkoutForm = () => {
 
     const details = { Name1, Name2, Name3, RoomNo };
 
-    const response = await fetch("/api/workouts/home", {
+    const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/workouts/home", {
       method: "POST",
       body: JSON.stringify(details),
       headers: {
@@ -42,7 +44,7 @@ const WorkoutForm = () => {
     if (!response.ok) {
       setError(json.error);
       console.log("Rohan");
-      history.push("/chat");
+      navigate("/chat");
       setEmptyFields(json.emptyFields);
     }
     if (response.ok) {

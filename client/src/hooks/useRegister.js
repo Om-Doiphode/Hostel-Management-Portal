@@ -54,7 +54,7 @@ export const useRegister = () => {
       pundertaking
     );
 
-    const response = await fetch("/api/user/register", {
+    const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/user/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
