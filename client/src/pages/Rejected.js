@@ -39,7 +39,7 @@ const Rejected = () => {
 
     // fetchRejected();
 
-    fetch("http://localhost:4000/api/admin/rejectedstuds", {
+    fetch("https://hostel-management-portal-ecn2.onrender.com/api/admin/rejectedstuds", {
         method: "GET",
         crossDomain: true,
         headers: {

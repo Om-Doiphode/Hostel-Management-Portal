@@ -6,7 +6,7 @@ const PdfViewer = () => {
     const [documents, setDocuments] = useState([]);
     useEffect(() => {
         const fetchDocuments = async () => {
-            const response = await axios.get("http://127.0.0.1:4000/get-pdfs");
+            const response = await axios.get("https://hostel-management-portal-ecn2.onrender.com/get-pdfs");
             setDocuments(response.data);
         };
 

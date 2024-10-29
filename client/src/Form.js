@@ -40,7 +40,7 @@ const App = () => {
             },
         }
 
-        fetch('http://127.0.0.1:4000/api/submitAccepted', {
+        fetch('https://hostel-management-portal-ecn2.onrender.com/api/submitAccepted', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ const App = () => {
         console.log(e)
 
 
-        fetch(`http://127.0.0.1:4000/api/delete/${e['_id']}`, {
+        fetch(`https://hostel-management-portal-ecn2.onrender.com/api/delete/${e['_id']}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
@@ -94,7 +94,7 @@ const App = () => {
             },
         }
 
-        fetch('http://127.0.0.1:4000/api/submitRejected', {
+        fetch('https://hostel-management-portal-ecn2.onrender.com/api/submitRejected', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -107,7 +107,7 @@ const App = () => {
         console.log("Rejected")
         console.log(e)
 
-        fetch(`http://127.0.0.1:4000/api/delete/${e['_id']}`, {
+        fetch(`https://hostel-management-portal-ecn2.onrender.com/api/delete/${e['_id']}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
@@ -123,7 +123,7 @@ const App = () => {
 
     useEffect(() => {
         const fetchDocuments = async () => {
-            const response = await axios.get("http://127.0.0.1:4000/api/collections");
+            const response = await axios.get("https://hostel-management-portal-ecn2.onrender.com/api/collections");
             setDocuments(response.data);
         };
 

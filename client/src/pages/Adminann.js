@@ -12,7 +12,7 @@ const Adminann = () => {
     // await createannouncement(announcement);
     const ann = { announcement };
 
-    fetch('http://localhost:4000/api/admin/ann', {
+    fetch('https://hostel-management-portal-ecn2.onrender.com/api/admin/ann', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

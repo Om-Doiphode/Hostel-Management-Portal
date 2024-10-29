@@ -10,7 +10,7 @@ import { AuthContext3Provider } from './context/AuthContext3';
 
 import reportWebVitals from './reportWebVitals';
 
-const socket = io.connect('http://localhost:4000')
+const socket = io.connect('https://hostel-management-portal-ecn2.onrender.com')
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

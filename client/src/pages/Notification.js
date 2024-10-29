@@ -5,7 +5,7 @@ const Notification = () => {
   const[ notifi, setNotifi]= useState("")
   useEffect(() => {
     const fetchNotifi = async () => {
-      const response = await fetch('http://localhost:4000/api/user/notification')
+      const response = await fetch('https://hostel-management-portal-ecn2.onrender.com/api/user/notification')
       const json = await response.json()
   
       if (response.ok) {

@@ -44,7 +44,7 @@ const Accepted = () => {
     
     //   fetchAccepted();
       
-    fetch("http://localhost:4000/api/admin/acceptedstuds", {
+    fetch("https://hostel-management-portal-ecn2.onrender.com/api/admin/acceptedstuds", {
         method: "GET",
         crossDomain: true,
         headers: {

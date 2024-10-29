@@ -47,7 +47,7 @@ import Rejected from "./pages/Rejected";
 import PdfViewer from "./seniorForm";
 import SeniorStudentInfo from "./seniorStudentInfo";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://hostel-management-portal-ecn2.onrender.com");
 
 function App() {
   const { user } = useAuthContext();

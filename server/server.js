@@ -78,7 +78,7 @@ mongoose
 const io = new Server(server, {
   cors: {
     //which url will be calling with our server i.e our react web
-    origin: "http://localhost:3000",
+    origin: "https://hostel-management-portal-ecn2.onrender.com",
     methods: ["GET", "POST"],
   },
 });
@@ -122,6 +122,6 @@ app.get("/allotment", (req, res) => {
 });
 
 //listening to server
-server.listen(4000, () => {
+server.listen(process.env.PORT, () => {
   console.log("listening to 4000");
 });
