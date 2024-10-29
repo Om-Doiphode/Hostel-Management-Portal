@@ -111,6 +111,6 @@ app.get('/allotment',(req,res)=>
 })
 
 //listening to server
-server.listen(4000, () => {
-    console.log('listening to 4000')
+server.listen(process.env.PORT, () => {
+    console.log(`listening to ${process.env.PORT}`)
 })

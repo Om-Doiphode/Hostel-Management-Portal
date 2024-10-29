@@ -1,10 +1,12 @@
-import { useState, history } from "react";
+import { useState } from "react";
+import {useNavigate} from 'react-router-dom';
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import { useAuthContext } from "../hooks/useAuthContext";
 
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext();
   const { user } = useAuthContext();
+  const navigate = useNavigate();
 
   const [Name1, setName1] = useState("");
   const [Name2, setName2] = useState("");
@@ -42,7 +44,7 @@ const WorkoutForm = () => {
     if (!response.ok) {
       setError(json.error);
       console.log("Rohan");
-      history.push("/chat");
+      navigate("/chat");
       setEmptyFields(json.emptyFields);
     }
     if (response.ok) {
