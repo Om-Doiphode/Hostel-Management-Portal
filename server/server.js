@@ -60,7 +60,7 @@ mongoose
 const io = new Server(server, {
   cors: {
     //which url will be calling with our server i.e our react web
-    origin: "http://localhost:3000",
+    origin: "https://hostel-management-portal-ecn2.onrender.com",
     methods: ["GET", "POST"],
   },
 });

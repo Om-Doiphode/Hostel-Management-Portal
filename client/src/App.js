@@ -23,7 +23,7 @@ import Notification from "./pages/Notification";
 import HomeMain from "./pages/HomeMain";
 import Rules from "./pages/Rules";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://hostel-management-portal-ecn2.onrender.com");
 
 function App() {
   const { user } = useAuthContext();

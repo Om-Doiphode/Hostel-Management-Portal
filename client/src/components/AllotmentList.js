@@ -12,7 +12,7 @@ const AllotmentList = () => {
   const [combinedGirls, setCombinedGirls] = useState([]);
   const [combinedBoys, setCombinedBoys] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/allotment", {
+    fetch("https://hostel-management-portal-ecn2.onrender.com/allotment", {
       method: "GET",
       crossDomain: true,
       headers: {
