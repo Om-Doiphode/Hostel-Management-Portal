@@ -13,7 +13,7 @@ export const useSignup = () => {
     setError(null)
       console.log(name,number,branch,category,year,merit,address,gender,email,password)
       setSuccess(0);
-    const response = await fetch('https://hostel-management-portal-ecn2.onrender.com/api/user/signup', {
+    const response = await fetch('https://vjti-hostel-management-portal.onrender.com/api/user/signup', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ name,number,branch,category,year,merit,address,gender,email,password })

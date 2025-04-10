@@ -28,7 +28,7 @@ const SeniorStudentInfo = () => {
     const [documents, setDocuments] = useState([]);
     useEffect(() => {
         const fetchDocuments = async () => {
-            const response = await axios.get(`https://hostel-management-portal-ecn2.onrender.com/get-pdfs`);
+            const response = await axios.get(`https://vjti-hostel-management-portal.onrender.com/get-pdfs`);
             setDocuments(response.data);
         };
 

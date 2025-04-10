@@ -44,7 +44,7 @@ const Accepted = () => {
     
     //   fetchAccepted();
       
-    fetch("https://hostel-management-portal-ecn2.onrender.com/api/admin/acceptedstuds", {
+    fetch("https://vjti-hostel-management-portal.onrender.com/api/admin/acceptedstuds", {
         method: "GET",
         crossDomain: true,
         headers: {

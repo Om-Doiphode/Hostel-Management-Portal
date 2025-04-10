@@ -1,5 +1,5 @@
 {
-  "proxy": "https://hostel-management-portal-ecn2.onrender.com",
+  "proxy": "https://vjti-hostel-management-portal.onrender.com",
   "name": "client",
   "version": "0.1.0",
   "private": true,

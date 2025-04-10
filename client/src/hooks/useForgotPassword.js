@@ -9,7 +9,7 @@ export const useForgotPassword=()=>
     const [isLoading, setIsLoading] = useState(null)
     const forgotPassword= async (email)=>
     {
-        const response = await fetch('https://hostel-management-portal-ecn2.onrender.com/api/user/forgotPassword', {
+        const response = await fetch('https://vjti-hostel-management-portal.onrender.com/api/user/forgotPassword', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email})

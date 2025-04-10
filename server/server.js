@@ -78,7 +78,7 @@ mongoose
 const io = new Server(server, {
   cors: {
     //which url will be calling with our server i.e our react web
-    origin: "https://hostel-management-portal-ecn2.onrender.com",
+    origin: "https://vjti-hostel-management-portal.onrender.com",
     methods: ["GET", "POST"],
   },
 });

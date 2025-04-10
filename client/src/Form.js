@@ -40,7 +40,7 @@ const App = () => {
             },
         }
 
-        fetch('https://hostel-management-portal-ecn2.onrender.com/api/submitAccepted', {
+        fetch('https://vjti-hostel-management-portal.onrender.com/api/submitAccepted', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ const App = () => {
         console.log(e)
 
 
-        fetch(`https://hostel-management-portal-ecn2.onrender.com/api/delete/${e['_id']}`, {
+        fetch(`https://vjti-hostel-management-portal.onrender.com/api/delete/${e['_id']}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
@@ -94,7 +94,7 @@ const App = () => {
             },
         }
 
-        fetch('https://hostel-management-portal-ecn2.onrender.com/api/submitRejected', {
+        fetch('https://vjti-hostel-management-portal.onrender.com/api/submitRejected', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -107,7 +107,7 @@ const App = () => {
         console.log("Rejected")
         console.log(e)
 
-        fetch(`https://hostel-management-portal-ecn2.onrender.com/api/delete/${e['_id']}`, {
+        fetch(`https://vjti-hostel-management-portal.onrender.com/api/delete/${e['_id']}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
@@ -123,7 +123,7 @@ const App = () => {
 
     useEffect(() => {
         const fetchDocuments = async () => {
-            const response = await axios.get("https://hostel-management-portal-ecn2.onrender.com/api/collections");
+            const response = await axios.get("https://vjti-hostel-management-portal.onrender.com/api/collections");
             setDocuments(response.data);
         };
 

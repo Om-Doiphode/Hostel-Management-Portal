@@ -12,7 +12,7 @@ export const useResetPassword = () => {
 
     
     const response = await fetch(
-      `https://hostel-management-portal-ecn2.onrender.com/api/user/resetPassword/${params.newToken}`,
+      `https://vjti-hostel-management-portal.onrender.com/api/user/resetPassword/${params.newToken}`,
       {
         method: "PUT",
         headers: { "Content-Type": "application/json" },

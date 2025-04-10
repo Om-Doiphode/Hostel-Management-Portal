@@ -39,7 +39,7 @@ const Rejected = () => {
 
     // fetchRejected();
 
-    fetch("https://hostel-management-portal-ecn2.onrender.com/api/admin/rejectedstuds", {
+    fetch("https://vjti-hostel-management-portal.onrender.com/api/admin/rejectedstuds", {
         method: "GET",
         crossDomain: true,
         headers: {

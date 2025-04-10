@@ -7,7 +7,7 @@ const Print = () => {
   const [date, setDate]=useState("");
   useEffect(() => {
     const fetchNotifi = async () => {
-      const response = await fetch("https://hostel-management-portal-ecn2.onrender.com/api/admin/comp");
+      const response = await fetch("https://vjti-hostel-management-portal.onrender.com/api/admin/comp");
       const json = await response.json();
 
       if (response.ok) {
